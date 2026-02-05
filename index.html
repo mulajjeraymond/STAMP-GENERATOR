@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Raymond Stamp Genius - Master Edition</title>
+    <title>ERRI GROUP Stamp HUB - Master Edition</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
@@ -60,7 +60,7 @@
 <body>
 
     <div id="loading-overlay"><h2>PROCESSING DOCUMENT...</h2></div>
-    <div class="main-header">RAYMOND STAMP GENIUS</div>
+    <div class="main-header">ERRI GROUP STAMP HUB</div>
     
     <div class="toolbar">
         <label class="btn btn-upload">📁 LOAD FILE
@@ -90,7 +90,7 @@
         </div>
 
         <button class="btn btn-refresh" onclick="location.reload()">🔄 RESET</button>
-        <button class="btn btn-pdf" onclick="generateFullPDF()">💾 SAVE PDF</button>
+        <button class="btn btn-pdf" onclick="generateFullPDF()">💾 SAVE </button>
     </div>
 
     <div id="canvas-wrapper">
@@ -203,7 +203,7 @@
         const w = element.offsetWidth;
         const h = element.offsetHeight;
         html2pdf().set({
-            margin: 0, filename: 'Raymond_Final_Doc.pdf',
+            margin: 0, filename: 'STAMPED DOC.pdf',
             image: { type: 'jpeg', quality: 1 },
             html2canvas: { scale: 2, useCORS: true },
             jsPDF: { unit: 'px', format: [w, h], orientation: w > h ? 'l' : 'p' }
@@ -215,3 +215,4 @@
 
 </body>
 </html>
+
